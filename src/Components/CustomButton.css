@@ -1,0 +1,30 @@
+.custom-button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .custom-button.warning {
+    background-color: #5236f4;
+  }
+  
+
+  
+  .custom-button[title]:hover::before {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    margin-top: 10px;
+    z-index: 1;
+  }
+.custom-button.warning:hover{
+  border: 2px solid red;
+}
